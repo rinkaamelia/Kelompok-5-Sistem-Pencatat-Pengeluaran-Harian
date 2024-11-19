@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0" version="24.8.6">
   <diagram name="Page-1" id="_rfeyzUa6L_knaKMxJD3">
-    <mxGraphModel dx="1323" dy="968" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="983" dy="579" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -46,6 +46,9 @@
         </mxCell>
         <mxCell id="6cyk_nSSg2t2l5gpQGrE-12" value="Simpan ke database" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Lucida Console;fontSize=10;" vertex="1" parent="1">
           <mxGeometry x="370" y="222.5" width="110" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="6cyk_nSSg2t2l5gpQGrE-107" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="6cyk_nSSg2t2l5gpQGrE-15" target="6cyk_nSSg2t2l5gpQGrE-17">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="6cyk_nSSg2t2l5gpQGrE-15" value="Input jumlah yang ingin ditabung" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Lucida Console;fontSize=10;" vertex="1" parent="1">
           <mxGeometry x="510" y="320" width="100" height="50" as="geometry" />
