@@ -1,5 +1,6 @@
 # Kelompok-5-Sistem-Pencatat-Pengeluaran-Harian
 Tugas Pemrograman Komputer dan Algoritma Teknik Industri 2024 Kelas C
+
 Anggota Kelompok:
 1. Rinka Amelia Gifanti {I0324099)
 2. Danaila Aisha Nandita Azzahra (I0324104)
