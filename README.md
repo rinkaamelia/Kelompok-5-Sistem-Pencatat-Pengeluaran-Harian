@@ -10,8 +10,7 @@ Tugas Pemrograman Komputer dan Algoritma Teknik Industri 2024 Kelas C
 ## Tema: Sistem Pencatat Pengeluaran Harian
 
 ## Deskripsi Singkat:
-
-Sistem yang dapat membantu pengguna, terutama mahasiswa, dalam mencatat dan melacak semua pengeluaran mereka setiap hari.
+Sistem ini dirancang untuk membantu pengguna, terutama mahasiswa untuk mencatat pemasukan dan pengeluaran harian serta mengelola anggaran. Pengguna dapat menginput data pemasukan, menentukan alokasi tabungan, dan menghitung anggaran harian. Selain itu, sistem memungkinkan pencatatan pengeluaran, memverifikasi kelengkapan data, serta memberikan notifikasi jika pengeluaran melebihi anggaran. Data yang tercatat akan digunakan untuk membuat laporan keuangan yang mencakup total pengeluaran, kategori, dan sisa anggaran, yang kemudian dikirimkan kepada pengguna.
 
 ## Fitur:
 1. Pencatatan pengeluaran harian sekaligus kategorisasi pengeluaran. 
