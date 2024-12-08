@@ -18,6 +18,7 @@ Sistem ini dirancang untuk membantu pengguna, terutama mahasiswa untuk mencatat 
 3. Memiliki fitur pengingat untuk mencatat pengeluaran serta pengguna dapat menetapkan anggaran yang sesuai dengan batasan.
 
 **Flowchart Sistem Pencatat Pengeluaran Harian**
-![revisi flowchart fix drawio](https://github.com/user-attachments/assets/0d7c4221-bd0b-4acc-9735-050fca10d1dd)
+![Flowchart Sistem Pencatat Pengeluaran Harian Revisi](https://github.com/user-attachments/assets/0f2c0b51-539d-494e-8519-14d2e664ba4c)
+
 
    
