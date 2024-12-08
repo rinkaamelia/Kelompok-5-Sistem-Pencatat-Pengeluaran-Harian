@@ -22,54 +22,42 @@ Sistem ini dirancang untuk membantu pengguna, terutama mahasiswa untuk mencatat 
 
 
 ## Library yang Ditambahkan:
-1. **Pastikan Python Terinstal dengan GUI/Tkinter**  
-   Program ini menggunakan antarmuka grafis berbasis library `tkinter`, yang biasanya sudah termasuk dalam instalasi default Python. Jika Python tidak mendukung GUI/Tkinter, pastikan kita menginstal ulang Python dengan fitur lengkap.  
+### **Library Standar Python**
+1. **`tkinter`**
+   - Digunakan untuk antarmuka grafis (GUI). Biasanya sudah termasuk dalam instalasi Python standar.
 
-2. **Instal Library yang Dibutuhkan**  
-   Beberapa library eksternal digunakan dalam program ini, yaitu:  
-   **`pillow`** , **`pandas`** , **`openpyxl`** , **`tkcalendar`**
+### **Library Eksternal**
+1. **`Pillow`**
+   - Memungkinkan pemrosesan gambar, seperti menyesuaikan ukuran gambar dan menampilkannya pada GUI.
+   - Dapat dipasang menggunakan perintah:  
+     ```bash
+     pip install pillow
+     ```
 
-   Kita dapat menginstal semua library ini dengan mengetikkan perintah berikut di terminal atau command prompt:  
-   ```bash
-   pip install pillow pandas openpyxl tkcalendar
-   ```
+2. **`pandas`**
+   - Berguna untuk mengelola data, khususnya saat membaca atau menyimpan data ke file Excel.
+   - Dapat dipasang menggunakan perintah:  
+     ```bash
+     pip install pandas
+     ```
 
-3. **Pastikan File Gambar Tersedia**  
-   Program tersebut memerlukan file gambar dan pastikan file gambar berada di direktori yang sama dengan file program utama. Jika file gambar tidak ditemukan, beberapa bagian antarmuka mungkin tidak akan tampil dengan benar.
+3. **`openpyxl`**
+   - Berfungsi sebagai engine untuk membaca dan menulis file Excel dengan format `.xlsx`.
+   - Dapat dipasang menggunakan perintah:  
+     ```bash
+     pip install openpyxl
+     ```
 
-4. **Pastikan File `database_module.py` Tersedia**  
-   Program menggunakan file `database_module.py` untuk mengelola data di file Excel. Berikut adalah isi file `database_module.py` yang sesuai dengan program ini:  
-   ```python
-   import pandas as pd
+4. **`tkcalendar`**
+   - Menyediakan widget kalender untuk memilih tanggal pada antarmuka aplikasi.
+   - Dapat dipasang menggunakan perintah:  
+     ```bash
+     pip install tkcalendar
+     ```
+--
+### **Pendukung Lainnya**
+- File `database_module.py` harus tersedia dalam direktori yang sama dengan program Anda. Pastikan modul ini mencakup fungsi seperti `save_data_to_excel` dan variabel `DATABASE_FILE` untuk menyimpan data Excel.
 
-   DATABASE_FILE = "data.xlsx"  # File tempat menyimpan data
+- File gambar yang dirujuk dalam kode (`1.png`, `2.png`, `3.png`, `4.png`, `5.png`) juga perlu tersedia di direktori proyek atau sesuai jalur yang diatur dalam kode.
 
-   # Fungsi untuk menyimpan data baru ke file Excel
-   def simpan_data(tanggal, pemasukan, pengeluaran, keterangan, anggaran, sisa_anggaran):
-       try:
-           # Membaca data yang sudah ada di file Excel
-           df = pd.read_excel(DATABASE_FILE)
-       except FileNotFoundError:
-           # Jika file belum ada, membuat DataFrame baru
-           kolom = ['Tanggal', 'Pemasukan', 'Pengeluaran', 'Keterangan', 'Anggaran Mingguan', 'Sisa Anggaran']
-           df = pd.DataFrame(columns=kolom)
-
-       # Menambahkan data baru ke DataFrame
-       data_baru = {
-           'Tanggal': tanggal,
-           'Pemasukan': pemasukan,
-           'Pengeluaran': pengeluaran,
-           'Keterangan': keterangan,
-           'Anggaran Mingguan': anggaran,
-           'Sisa Anggaran': sisa_anggaran
-       }
-       df = pd.concat([df, pd.DataFrame([data_baru])], ignore_index=True)
-
-       # Menyimpan kembali ke file Excel
-       df.to_excel(DATABASE_FILE, index=False)
-   ```
-
-   Pastikan file `database_module.py` berada dalam direktori yang sama dengan program utama.
-
-5. **Setelah Semua Langkah Dilakukan**  
-   Jika semua persyaratan di atas sudah terpenuhi, kita dapat menjalankan program ini tanpa kendala.
+Setelah semua library terinstal dan file pendukung disiapkan, program dapat dijalankan dengan lancar.
