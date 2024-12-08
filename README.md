@@ -54,7 +54,6 @@ Sistem ini dirancang untuk membantu pengguna, terutama mahasiswa untuk mencatat 
      ```bash
      pip install tkcalendar
      ```
---
 ### **Pendukung Lainnya**
 - File `database_module.py` harus tersedia dalam direktori yang sama dengan program Anda. Pastikan modul ini mencakup fungsi seperti `save_data_to_excel` dan variabel `DATABASE_FILE` untuk menyimpan data Excel.
 
