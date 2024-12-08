@@ -18,8 +18,7 @@ Sistem ini dirancang untuk membantu pengguna, terutama mahasiswa untuk mencatat 
 3. Memiliki fitur pengingat untuk mencatat pengeluaran serta pengguna dapat menetapkan anggaran yang sesuai dengan batasan.
 
 **Flowchart Sistem Pencatat Pengeluaran Harian**
-![Revisi Flowchart Sistem](https://github.com/user-attachments/assets/e16ee1e6-4d74-4044-9910-dd8a035b7164)
-
+!![REVISI FLOWCHART](https://github.com/user-attachments/assets/e46ff424-e7ed-4552-97da-fd902c260d0a)
 
 ## Library yang Ditambahkan:
 ### **Library Standar Python**
