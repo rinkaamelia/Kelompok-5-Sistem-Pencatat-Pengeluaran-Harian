@@ -22,71 +22,54 @@ Sistem ini dirancang untuk membantu pengguna, terutama mahasiswa untuk mencatat 
 
 
 ## Library yang Ditambahkan:
-### **1. Library Standar Python**
-- **`tkinter`**
-  - Untuk membuat antarmuka grafis pengguna.
-  - Sudah termasuk dalam instalasi Python secara default.
-  - Pastikan Python diinstal dengan GUI/Tkinter.
+1. **Pastikan Python Terinstal dengan GUI/Tkinter**  
+   Program ini menggunakan antarmuka grafis berbasis library `tkinter`, yang biasanya sudah termasuk dalam instalasi default Python. Jika Python Anda tidak mendukung GUI/Tkinter, pastikan Anda menginstal ulang Python dengan fitur lengkap.  
 
-### **2. Library Eksternal**
-- **`Pillow`**
-  - Untuk menangani gambar (dalam program ini digunakan untuk memuat gambar background).
-  - **Cara instalasi**:
-    ```bash
-    pip install pillow
-    ```
+2. **Instal Library yang Dibutuhkan**  
+   Beberapa library eksternal digunakan dalam program ini, yaitu:  
+   **`pillow`** , **`pandas`** , **`openpyxl`** , **`tkcalendar`**
 
-- **`pandas`**
-  - Untuk memanipulasi dan membaca/menulis data Excel.
-  - **Cara instalasi**:
-    ```bash
-    pip install pandas
-    ```
+   Anda dapat menginstal semua library ini dengan mengetikkan perintah berikut di terminal atau command prompt:  
+   ```bash
+   pip install pillow pandas openpyxl tkcalendar
+   ```
 
-- **`openpyxl`**
-  - Diperlukan oleh pandas untuk membaca/menulis file Excel dalam format `.xlsx`.
-  - **Cara instalasi**:
-    ```bash
-    pip install openpyxl
-    ```
+3. **Pastikan File Gambar Tersedia**  
+   Program tersebut memerlukan file gambar dan pastikan file gambar berada di direktori yang sama dengan file program utama. Jika file gambar tidak ditemukan, beberapa bagian antarmuka mungkin tidak akan tampil dengan benar.
 
-- **`tkcalendar`**
-  - Untuk menambahkan widget kalender.
-  - **Cara instalasi**:
-    ```bash
-    pip install tkcalendar
-    ```
+4. **Pastikan File `database_module.py` Tersedia**  
+   Program menggunakan file `database_module.py` untuk mengelola data di file Excel. Berikut adalah isi file `database_module.py` yang sesuai dengan program ini:  
+   ```python
+   import pandas as pd
 
-### **3. Modul `database_module`**
-- **Custom Module**: Modul ini buatan sendiri, jadi file `database_module.py` harus ada di folder yang sama dengan script ini, atau path-nya harus ditambahkan ke Python.
-- Jika tidak ada, Anda harus membuat modul tersebut. Berikut kemungkinan isi dasar untuk modul ini:
-  ```python
-  import pandas as pd
+   DATABASE_FILE = "data.xlsx"  # File tempat menyimpan data
 
-  DATABASE_FILE = "data.xlsx"  # Nama file database
+   # Fungsi untuk menyimpan data baru ke file Excel
+   def simpan_data(tanggal, pemasukan, pengeluaran, keterangan, anggaran, sisa_anggaran):
+       try:
+           # Membaca data yang sudah ada di file Excel
+           df = pd.read_excel(DATABASE_FILE)
+       except FileNotFoundError:
+           # Jika file belum ada, membuat DataFrame baru
+           kolom = ['Tanggal', 'Pemasukan', 'Pengeluaran', 'Keterangan', 'Anggaran Mingguan', 'Sisa Anggaran']
+           df = pd.DataFrame(columns=kolom)
 
-  def save_data_to_excel(data):
-      try:
-          # Membaca data jika file sudah ada
-          df = pd.read_excel(DATABASE_FILE)
-      except FileNotFoundError:
-          # Jika file belum ada, buat DataFrame kosong
-          df = pd.DataFrame(columns=["tanggal", "jumlah_pemasukan", "jumlah_pengeluaran", "keterangan", "anggaran_mingguan", "sisa_anggaran"])
+       # Menambahkan data baru ke DataFrame
+       data_baru = {
+           'Tanggal': tanggal,
+           'Pemasukan': pemasukan,
+           'Pengeluaran': pengeluaran,
+           'Keterangan': keterangan,
+           'Anggaran Mingguan': anggaran,
+           'Sisa Anggaran': sisa_anggaran
+       }
+       df = pd.concat([df, pd.DataFrame([data_baru])], ignore_index=True)
 
-      # Menambahkan data baru
-      df = df.append(data, ignore_index=True)
-      # Menyimpan ke file Excel
-      df.to_excel(DATABASE_FILE, index=False)
-  ```
+       # Menyimpan kembali ke file Excel
+       df.to_excel(DATABASE_FILE, index=False)
+   ```
 
-### **4. Tambahan**
-1. **File Gambar**:
-   Pastikan file gambar `1.png`, `2.png`, `3.png`, `4.png`, dan `5.png` ada di direktori yang sama dengan script atau sesuai path yang diberikan.
-   
-2. **Modul `database_module`**:
-   Pastikan file `database_module.py` ada di direktori yang sama.
+   Pastikan file `database_module.py` berada dalam direktori yang sama dengan program utama.
 
-Setelah library diinstal dan file pendukung tersedia, program Anda seharusnya dapat dijalankan tanpa masalah.
-
-
-   
+5. **Setelah Semua Langkah Dilakukan**  
+   Jika semua persyaratan di atas sudah terpenuhi, Anda dapat menjalankan program ini tanpa kendala.
