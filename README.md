@@ -23,13 +23,13 @@ Sistem ini dirancang untuk membantu pengguna, terutama mahasiswa untuk mencatat 
 
 ## Library yang Ditambahkan:
 1. **Pastikan Python Terinstal dengan GUI/Tkinter**  
-   Program ini menggunakan antarmuka grafis berbasis library `tkinter`, yang biasanya sudah termasuk dalam instalasi default Python. Jika Python Anda tidak mendukung GUI/Tkinter, pastikan Anda menginstal ulang Python dengan fitur lengkap.  
+   Program ini menggunakan antarmuka grafis berbasis library `tkinter`, yang biasanya sudah termasuk dalam instalasi default Python. Jika Python tidak mendukung GUI/Tkinter, pastikan kita menginstal ulang Python dengan fitur lengkap.  
 
 2. **Instal Library yang Dibutuhkan**  
    Beberapa library eksternal digunakan dalam program ini, yaitu:  
    **`pillow`** , **`pandas`** , **`openpyxl`** , **`tkcalendar`**
 
-   Anda dapat menginstal semua library ini dengan mengetikkan perintah berikut di terminal atau command prompt:  
+   Kita dapat menginstal semua library ini dengan mengetikkan perintah berikut di terminal atau command prompt:  
    ```bash
    pip install pillow pandas openpyxl tkcalendar
    ```
@@ -72,4 +72,4 @@ Sistem ini dirancang untuk membantu pengguna, terutama mahasiswa untuk mencatat 
    Pastikan file `database_module.py` berada dalam direktori yang sama dengan program utama.
 
 5. **Setelah Semua Langkah Dilakukan**  
-   Jika semua persyaratan di atas sudah terpenuhi, Anda dapat menjalankan program ini tanpa kendala.
+   Jika semua persyaratan di atas sudah terpenuhi, kita dapat menjalankan program ini tanpa kendala.
