@@ -16,26 +16,20 @@
         <mxCell id="fSrknXuY3G2Y7a2gkYDg-2" value="tampilkan start screen (tombol: mulai, keluar)" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="340" y="319" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="fSrknXuY3G2Y7a2gkYDg-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="fSrknXuY3G2Y7a2gkYDg-6" target="fSrknXuY3G2Y7a2gkYDg-8">
+        <mxCell id="fSrknXuY3G2Y7a2gkYDg-134" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="fSrknXuY3G2Y7a2gkYDg-6" target="fSrknXuY3G2Y7a2gkYDg-130">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="fSrknXuY3G2Y7a2gkYDg-134" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="fSrknXuY3G2Y7a2gkYDg-6" target="fSrknXuY3G2Y7a2gkYDg-130">
+        <mxCell id="fSrknXuY3G2Y7a2gkYDg-230" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="fSrknXuY3G2Y7a2gkYDg-6" target="fSrknXuY3G2Y7a2gkYDg-13">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="fSrknXuY3G2Y7a2gkYDg-6" value="apakah memilih memulai?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="345" y="423" width="110" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="fSrknXuY3G2Y7a2gkYDg-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="fSrknXuY3G2Y7a2gkYDg-8" target="fSrknXuY3G2Y7a2gkYDg-13">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="fSrknXuY3G2Y7a2gkYDg-8" value="masuk menu utama" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="340" y="580" width="120" height="59" as="geometry" />
-        </mxCell>
         <mxCell id="fSrknXuY3G2Y7a2gkYDg-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="fSrknXuY3G2Y7a2gkYDg-13" target="fSrknXuY3G2Y7a2gkYDg-15">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="fSrknXuY3G2Y7a2gkYDg-13" value="pilihan menu utama:&lt;div&gt;alokasi, pengeluaran, laporan bulanan, kembali&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="335" y="680" width="130" height="80" as="geometry" />
+        <mxCell id="fSrknXuY3G2Y7a2gkYDg-13" value="&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;masuk ke pilihan menu utama:&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;1. alokasi&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;2. pengeluaran&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;3. laporan bulanan&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;4. kembali&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="322.5" y="640" width="155" height="90" as="geometry" />
         </mxCell>
         <mxCell id="fSrknXuY3G2Y7a2gkYDg-43" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="fSrknXuY3G2Y7a2gkYDg-15" target="fSrknXuY3G2Y7a2gkYDg-42">
           <mxGeometry relative="1" as="geometry" />
@@ -298,7 +292,7 @@
           <mxGeometry x="1120" y="438" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="fSrknXuY3G2Y7a2gkYDg-97" value="Yes" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="395" y="530" width="60" height="30" as="geometry" />
+          <mxGeometry x="390" y="570" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="fSrknXuY3G2Y7a2gkYDg-98" value="No" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="490" y="450" width="60" height="30" as="geometry" />
@@ -376,12 +370,12 @@
         <mxCell id="fSrknXuY3G2Y7a2gkYDg-137" value="Yes" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="768" y="450" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="fSrknXuY3G2Y7a2gkYDg-151" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="fSrknXuY3G2Y7a2gkYDg-145" target="fSrknXuY3G2Y7a2gkYDg-8">
+        <mxCell id="fSrknXuY3G2Y7a2gkYDg-151" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="fSrknXuY3G2Y7a2gkYDg-145">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="230" y="770" as="targetPoint" />
+            <mxPoint x="320" y="690" as="targetPoint" />
             <Array as="points">
               <mxPoint x="260" y="985" />
-              <mxPoint x="260" y="609" />
+              <mxPoint x="260" y="690" />
             </Array>
           </mxGeometry>
         </mxCell>
