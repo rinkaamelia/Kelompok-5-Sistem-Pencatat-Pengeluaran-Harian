@@ -55,7 +55,7 @@ Sistem ini dirancang untuk membantu pengguna, terutama mahasiswa untuk mencatat 
      pip install tkcalendar
      ```
 ### **Pendukung Lainnya**
-- File `database_module.py` harus tersedia dalam direktori yang sama dengan program Anda. Pastikan modul ini mencakup fungsi seperti `save_data_to_excel` dan variabel `DATABASE_FILE` untuk menyimpan data Excel.
+- File `database_module.py` harus tersedia dalam direktori yang sama dengan program pengguna. Modul ini harus mencakup fungsi seperti `save_data_to_excel` dan variabel `DATABASE_FILE` untuk menyimpan data Excel.
 
 - File gambar yang dirujuk dalam kode (`1.png`, `2.png`, `3.png`, `4.png`, `5.png`) juga perlu tersedia di direktori proyek atau sesuai jalur yang diatur dalam kode.
 
