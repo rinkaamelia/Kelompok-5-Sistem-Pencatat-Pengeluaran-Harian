@@ -24,8 +24,9 @@ Sistem ini dirancang untuk membantu pengguna, terutama mahasiswa untuk mencatat 
 ## Library yang Ditambahkan:
 ### **1. Library Standar Python**
 - **`tkinter`**
+  - Untuk membuat antarmuka grafis pengguna.
   - Sudah termasuk dalam instalasi Python secara default.
-  - Pastikan Python diinstal dengan GUI/Tkinter (biasanya otomatis untuk Windows dan macOS).
+  - Pastikan Python diinstal dengan GUI/Tkinter.
 
 ### **2. Library Eksternal**
 - **`Pillow`**
